@@ -5,6 +5,14 @@ function whileLoop(countdown) {
   return 'done'
 }
 
+function forLoop(array) {
+  for (let i = 0, l = 25; i < l; i++) {
+    let s = i === 1 ? "I am 1 strange loop." : `I am ${i} strange loops.`
+    array.push(s)
+  }
+  return array
+}
+
 function maybeTrue() {
   return Math.random() >= 0.5
 }
@@ -17,13 +25,5 @@ function doWhileLoop(array) {
     l = l - 1
   } while (l > 0 && maybeTrue())
 
-  return array
-}
-
-function forLoop(array) {
-  for (let i = 0, l = 25; i < l; i++) {
-    let s = i === 1 ? "I am 1 strange loop." : `I am ${i} strange loops.`
-    array.push(s)
-  }
   return array
 }
