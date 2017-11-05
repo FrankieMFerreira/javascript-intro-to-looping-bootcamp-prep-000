@@ -13,17 +13,14 @@ function whileLoop(countdown) {
   return 'done'
 }
 
-function maybeTrue() {
-  return Math.random() >= 0.5
-}
-
 function doWhileLoop(array) {
-  let l = array.length - 1
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
 
   do {
-    array.splice(l, 1)
-    l = l - 1
-  } while (l > -1 || maybeTrue())
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
 
   return array
 }
