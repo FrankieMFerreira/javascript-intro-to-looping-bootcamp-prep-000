@@ -23,7 +23,7 @@ function doWhileLoop(array) {
   do {
     array.splice(l, 1)
     l = l - 1
-  } while (l > -1 || maybeTrue())
+  } while (l > 0 || maybeTrue())
 
   return array
 }
