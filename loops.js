@@ -18,7 +18,7 @@ function maybeTrue() {
 }
 
 function doWhileLoop(array) {
-  let l = array.length
+  let l = array.length - 1
 
   do {
     array.splice(l, 1)
